@@ -13,8 +13,8 @@ nltk.download('stopwords')
 stopwords = set(nltk.corpus.stopwords.words('english'))
 
 #========================loading the saved files==================================================
-lg = pickle.load(open("C:\\Users\\Risathvik\\Downloads\\NLP-Six-Emotion-Classification-and-Detection-Using-Deeep-learning-LSTM-main\\NLP-Six-Emotion-Classification-and-Detection-Using-Deeep-learning-LSTM-main\\logistic_regresion.pkl", 'rb'))
-tfidf_vectorizer = pickle.load(open("C:\\Users\\Risathvik\\Downloads\\NLP-Six-Emotion-Classification-and-Detection-Using-Deeep-learning-LSTM-main\\NLP-Six-Emotion-Classification-and-Detection-Using-Deeep-learning-LSTM-main\\tfidf_vectorizer.pkl", 'rb'))
+lg = pickle.load(open("logistic_regresion.pkl", 'rb'))
+tfidf_vectorizer = pickle.load(open("tfidf_vectorizer.pkl", 'rb'))
 
 # Define the emotion labels
 emotion_labels = ['Joy', 'Fear', 'Anger', 'Love', 'Sadness', 'Surprise']
